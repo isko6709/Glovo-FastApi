@@ -4,7 +4,7 @@ services:
 
   web:
     build: .
-    command: uvicorn main:booking_app --host 0.0.0.0 --port 8000
+    command: uvicorn main:glovo_app --host 0.0.0.0 --port 8000
     volumes:
       - .:/app
       - static_volume:/app/static
