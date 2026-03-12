@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+
 import uvicorn
 from mysite.api import (
     user, category, store, contact, address,
@@ -6,7 +7,8 @@ from mysite.api import (
 )
 from mysite.admin.setup import setup_admin
 
-app = FastAPI(title="glovo")
+glovo_app = FastAPI(title="glovo")
+
 
 app.include_router(user.user_router)
 app.include_router(category.category_router)
